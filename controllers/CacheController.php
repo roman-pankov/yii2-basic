@@ -17,6 +17,13 @@ class CacheController extends Controller
         return $this->testCache('2018-01-01', 1);
     }
 
+    /**
+     * Функция с кэшированием
+     *
+     * @param $date
+     * @param $type
+     * @return mixed
+     */
     public function testCache($date, $type)
     {
         $userId = Yii::$app->user->id;
